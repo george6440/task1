@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 900px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.return {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.return i {
+    margin-right: 5px;
+}
+
+.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flipped .back {
+    transform: rotateY(0deg);
+}

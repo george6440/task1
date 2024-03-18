@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card" id="card1">
+            <div class="content">
+                <div class="front" style="background-image: url('https://www.topgear.com/sites/default/files/2023/08/P90492179_highRes_bmw-i7-xdrive60-m-sp%20%281%29.jpg')">
+                    <div class="inner">
+                        <h2>BMW</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="button" onclick="flipCard('card1')">Details</button>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <h3>About BMW</h3>
+                        <p>Unlock the thrill of the road with BMW, the epitome of luxury and performance. Born in the heart of Germany, BMW isn't just a car brand; it's a legacy. From its humble beginnings as an aircraft engine manufacturer in 1916 to its status today as a symbol of automotive excellence, BMW has been pushing boundaries and redefining driving pleasure for over a century.</p>
+                        <p>When you drive a BMW, you're not just behind the wheel; you're in command of a finely-tuned machine engineered for excitement. With sleek designs, cutting-edge technology, and precision engineering, every BMW delivers an unparalleled driving experience.</p>
+                        <p>Join the ranks of those who demand more from their drive. Choose BMW, and let the journey begin.</p>
+                        <div class="icon">
+                            <i class="fas fa-globe"></i>
+                            <span>Country: Germany</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                            <span>Type: Luxury</span>
+                        </div>
+                        <button class="button return" onclick="flipCard('card1')"><i class="fas fa-arrow-left"></i> Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card2">
+            <div class="content">
+                <div class="front" style="background-image: url('https://www.topgear.com/sites/default/files/2023/11/1%20Mercedes%20AMG%20GT.jpg')">
+                    <div class="inner">
+                        <h2>Mercedes-Benz</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="button" onclick="flipCard('card2')">Details</button>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <h3>About Mercedes-Benz</h3>
+                        <p>Experience the luxury and elegance of Mercedes-Benz. Crafted with precision and renowned for its performance, Mercedes-Benz stands as a testament to automotive excellence. With a history spanning over a century, Mercedes-Benz has consistently set the standard for luxury vehicles worldwide.</p>
+                        <p>From sleek sedans to powerful SUVs, each Mercedes-Benz model offers a blend of comfort, style, and cutting-edge technology. Whether you're cruising through city streets or embarking on a cross-country adventure, Mercedes-Benz delivers a driving experience like no other.</p>
+                        <p>Elevate your journey with Mercedes-Benz, where innovation meets tradition.</p>
+                        <div class="icon">
+                            <i class="fas fa-globe"></i>
+                            <span>Country: Germany</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                            <span>Type: Luxury</span>
+                        </div>
+                        <button class="button return" onclick="flipCard('card2')"><i class="fas fa-arrow-left"></i> Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card3">
+            <div class="content">
+                <div class="front" style="background-image: url('https://image.cnbcfm.com/api/v1/image/105940475-1559232349684190164-car-ferrari-sf90-stradale.jpg?v=1559232362')">
+                    <div class="inner">
+                        <h2>Ferrari</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <button class="button" onclick="flipCard('card3')">Details</button>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <h3>About Ferrari</h3>
+                        <p>Experience the thrill of driving with Ferrari, the ultimate symbol of passion and performance. With a rich racing heritage and iconic design, Ferrari captures the essence of automotive excellence.</p>
+                        <p>From the legendary Ferrari Enzo to the iconic Ferrari 458 Italia, each model is crafted with precision and engineered for exhilarating performance. With its powerful engines and aerodynamic designs, Ferrari offers an unmatched driving experience.</p>
+                        <p>Embrace the passion and excitement of Ferrari, where dreams become reality on the open road.</p>
+                        <div class="icon">
+                            <i class="fas fa-globe"></i>
+                            <span>Country: Italy</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                            <span>Type: Luxury</span>
+                        </div>
+                        <button class="button return" onclick="flipCard('card3')"><i class="fas fa-arrow-left"></i> Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function flipCard(cardId) {
+            const card = document.getElementById(cardId);
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
